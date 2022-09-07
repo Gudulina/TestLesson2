@@ -2,20 +2,26 @@
 # Пример:   6782 -> 23
 #           0.56 -> 11
 
-num = (input('Введите число: '))
-sum = 0
-for i in num:
-    if i != '.':
-        sum += int(i)
-print('Сумма цифр = ', sum)
-
-# def summa (num):
-#     if num > 0:
-#         sum = sum + num % 10
-#         num /= 10
-#     return sum
+# num = (input('Введите число: '))
 # sum = 0
-# while num > 0:
-#     sum = sum + num % 10
-#     num /= 10
-# print('Сумма цифр = ', "{:.0f}".format(sum))
+# for i in num:
+#     if i != '.':
+#         sum += int(i)
+# print('Сумма цифр = ', sum)
+
+
+# 2. Напишите программу, которая принимает на вход число N и выдает
+# набор произведений чисел от 1 до N.
+# Пример: пусть N = 4, тогда [1, 2, 6, 24] (1, 1*2, 1*2*3, 1*2*3*4)
+
+num = int(input('Введите число: '))
+set = 1
+for i in range(1, num+1):
+    set *= i
+    print(set, end=' ')
+
+# n = int(input('input N: '))
+# factorial = 1
+# for i in range(1, n+1):
+#     factorial *= i
+#     print(factorial, end=' ')
