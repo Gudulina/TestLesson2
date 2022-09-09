@@ -14,14 +14,25 @@
 # набор произведений чисел от 1 до N.
 # Пример: пусть N = 4, тогда [1, 2, 6, 24] (1, 1*2, 1*2*3, 1*2*3*4)
 
-num = int(input('Введите число: '))
-set = 1
-for i in range(1, num+1):
-    set *= i
-    print(set, end=' ')
+# num = int(input('Введите число: '))
+# set = 1
+# for i in range(1, num+1):
+#     set *= i
+#     print(set, end=' ')
 
-# n = int(input('input N: '))
-# factorial = 1
-# for i in range(1, n+1):
-#     factorial *= i
-#     print(factorial, end=' ')
+# 3. Задайте список из n чисел последовательности (1+1/N)^n и выведите на экран их сумму.
+
+n = int (input('Введите число: '))
+summa = 0 
+for i in range(1, n + 1): 
+    summa += ((1 + 1 / i)**i) 
+print("%.2f" % summa)
+
+# 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].
+# Найдите произведение элементво на указанных поизциях.
+# Позиции хранятся в файле file.txt в одной строке одно число.
+
+# for i in range(number):
+# numbers.append(randint(number * -1, number + 1))
+
+# 5. Реализуйте алгоритм перемешивания списка.
